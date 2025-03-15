@@ -59,7 +59,7 @@
         </span>
         <span class="d-block" style="font-size: 14px; width: 100%; background: transparent; font-weight: bold; text-align: center; color: #fff;">
     </span>
-        <span class="pro-tag-line"> Luxurious<b> 2, 3, 4 BHK & Shops  </b>  Starts </span> <span class="pro-price">₹ 2.50 Cr <small style="font-size:16px;"> Onwards</small> </span>
+        <span class="pro-tag-line"> Luxurious<b> 3, 4 BHK & Shops  </b>  Starts </span> <span class="pro-price">₹ 3.55 Cr <small style="font-size:16px;"> Onwards</small> </span>
         <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Left Panel" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
         Download Brochure
     </button>
@@ -213,52 +213,19 @@
                     data-toggle="modal" data-target="#enqModal">Download Amenities</button>
             </div>
         </div>
+
         <div id="ami-3" class="ami-3 owl-carousel owl-theme">
+            {% for rs in amenities %}
             <div class="item-wrp">
-                <div class="ami_sec"><img alt="Multipurpose Hall" data-src="{% static '' %}assets/img/amenities/multi.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Multipurpose Hall</p>
+                <div class="ami_sec"><img alt="Multipurpose Hall" data-src="{{rs.icone.url}}" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>{{rs.title}}</p>
                 </div>
-                <div class="ami_sec"><img alt="Reflexology Path" data-src="{% static '' %}assets/img/amenities/path.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Reflexology Path</p>
+                <div class="ami_sec"><img alt="Reflexology Path" data-src="{{rs.icone2.url}}" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>{{rs.title2}}</p>
                 </div>
             </div>
-            <div class="item-wrp">
-                <div class="ami_sec"><img alt="Swimming Pool" data-src="{% static '' %}assets/img/amenities/pool.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Swimming Pool</p>
-                </div>
-                <div class="ami_sec"><img alt="Senior Citizen’s Area" data-src="{% static '' %}assets/img/amenities/senior.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Senior Citizen’s Area</p>
-                </div>
-            </div>
-            <div class="item-wrp">
-                <div class="ami_sec"><img alt="Salon & Spa" data-src="{% static '' %}assets/img/amenities/spa.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Salon & Spa</p>
-                </div>
-                <div class="ami_sec"><img alt="Amphitheatre" data-src="{% static '' %}assets/img/amenities/therater.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Amphitheatre</p>
-                </div>
-            </div>
-            <div class="item-wrp">
-                <div class="ami_sec"><img alt="Squash Court" data-src="{% static '' %}assets/img/amenities/court.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Squash Court</p>
-                </div>
-                <div class="ami_sec"><img alt="Cricket Turf" data-src="{% static '' %}assets/img/amenities/cricket.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Cricket Turf</p>
-                </div>
-            </div>
-            <div class="item-wrp">
-                <div class="ami_sec"><img alt="Banquet Hall" data-src="{% static '' %}assets/img/amenities/hall.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Banquet Hall</p>
-                </div>
-                <div class="ami_sec"><img alt="Jogging Track" data-src="{% static '' %}assets/img/amenities/jogging.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Jogging Track</p>
-                </div>
-            </div>
-            <div class="item-wrp">
-                <div class="ami_sec"><img alt="Kids’ Play Area" data-src="{% static '' %}assets/img/amenities/kdsplayarea_1.webp" loading="lazy" class="lazyload" fetchpriority="low" />
-                    <p>Kids’ Play Area</p>
-                </div>
-            </div>
+            {% endfor %}
+            
         </div>
         <div class="col-12">
             <p></p>
@@ -275,10 +242,10 @@
                     data-toggle="modal" data-target="#enqModal">Download Gallery</button></div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/1.webp" aria-label="Gallery Image1"> <img alt="kid's Play Area" data-src="{% static '' %}assets/img/gallery/1.webp" class="lazyload gallery-thumb" /> </a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/2.webp" aria-label="Gallery Image2"> <img alt="Garden" data-src="{% static '' %}assets/img/gallery/2.webp" class="lazyload gallery-thumb" /> </a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/3.webp" aria-label="Gallery Image3"> <img alt="Swimming Pool" data-src="{% static '' %}assets/img/gallery/3.webp" class="lazyload gallery-thumb" /> </a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/4.webp" aria-label="Gallery Image4"> <img alt="Bedroom" data-src="{% static '' %}assets/img/gallery/4.webp" class="lazyload gallery-thumb" /> </a></div>
+            {% for rs in gallery %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{{rs.web_image.url}}" aria-label="Gallery Image1"> <img alt="kid's Play Area" data-src="{{rs.web_image.url}}" class="lazyload gallery-thumb" /> </a></div>
+            {% endfor %}
+            
         </div>
         <div class="col-12">
             <p></p>

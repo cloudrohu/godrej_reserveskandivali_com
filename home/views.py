@@ -30,6 +30,7 @@ def index(request):
     interiors = Gallery.objects.filter(section = 'Interiors').order_by('-id')
     exterior = Gallery.objects.filter(section = 'Exterior').order_by('-id')
     plans = Gallery.objects.filter(section = 'Plans').order_by('-id')
+    gallery = Gallery.objects.all().order_by('-id')[0:4] 
 
     context={
         'header':header,
@@ -44,5 +45,6 @@ def index(request):
         'interiors':interiors,
         'exterior':exterior,
         'plans':plans,
+        'gallery':gallery,
     }
     return render(request,'index.html',context)
