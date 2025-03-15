@@ -36,7 +36,7 @@ admin.site.register(Unique_Selling_Proposition,Unique_Selling_PropositionAdmin)
 
 # Register your models here. 6
 class ConfigurationAdmin(admin.ModelAdmin):
-    list_display = ['id','typology','rera_carpet_area']
+    list_display = ['id','typology','rera_carpet_area','price']
 admin.site.register(Configuration, ConfigurationAdmin)
 
 

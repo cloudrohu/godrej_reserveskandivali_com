@@ -93,64 +93,20 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        {% for rs in configuration %}
                         <tr>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK Regal</td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">{{rs.typology}}</td>
                             <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
-                                1126/1134 Sq.ft.
+                                {{rs.rera_carpet_area}}
                                 <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
-                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.55 Cr Onwards
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> {{rs.price}} Onwards
                             </td>
                             <td>
                                 <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK Regal</td>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
-                                1149/1159 Sq.ft.
-                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
-                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.90 Cr Onwards
-                            </td>
-                            <td>
-                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK</td>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
-                                1450 Sq.ft.
-                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
-                            <td class="price-amt"><i class="mi mi-rs-light"></i> 5.15 Cr Onwards
-                            </td>
-                            <td>
-                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BHK </td>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
-                                2000 Sq.ft.
-                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
-                            <td class="price-amt"><i class="mi mi-rs-light"></i> 7.25 Cr Onwards
-                            </td>
-                            <td>
-                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">Commercial Shops</td>
-                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
-                                600 - 2500 Sq.ft.
-                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
-                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.90 Cr Onwards
-                            </td>
-                            <td>
-                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
-                            </td>
-                        </tr>
-
+                        {% endfor %}
+                        
                     </tbody>
                 </table>
             </div>

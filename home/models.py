@@ -70,6 +70,7 @@ class Unique_Selling_Proposition(models.Model):
 class Configuration(models.Model):
     typology = models.CharField(max_length=150)
     rera_carpet_area = models.CharField(max_length=150)
+    price = models.CharField(max_length=150)
     
     def __str__(self):
         return self.typology    
@@ -108,7 +109,7 @@ class Gallery(models.Model):
         return self.title    
         
     class Meta:
-        verbose_name_plural='7. Gallery'
+        verbose_name_plural='8. Gallery'
 
 
         
