@@ -1,0 +1,438 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<main class="pload">
+    <style>
+        .card-d-custom {
+            width: 95%;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto 15px;
+        }
+    </style>
+    <div id="home" class="carousel slide micro-main-slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#home" data-slide-to="0" class="active"></li>
+            <li data-target="#home" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item lazyloaded">
+                <div class="desktopview"><img alt="Godrej Reserve" width="1200" height="400" class="d-block micro-main-slider-img" src="{% static '' %}assets/img/d_1.webp" fetchpriority="high" /></div>
+            </div>
+            <div class="carousel-item lazyloaded">
+                <div class="desktopview"><img alt="Godrej Reserve" width="1200" height="400" class="d-block micro-main-slider-img" src="{% static '' %}assets/img/d-2.webp" fetchpriority="low" /></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="info-box overflow-hidden">
+        <!--<span class="pro-status">Booking Open: Limited Time Only</span>-->
+        <div class="wrapper offer-bg-animation">
+            <span class="zoom-in-zoom-out padding10">Booking Open: Limited Time Only</span>
+        </div>
+        <h1 class="pro-title">
+            Godrej Reserve
+
+        </h1>
+        <div style="flex-wrap: wrap; display: inline-flex;padding-bottom: 10px;">
+            <span class="pro-add">At Kandivali</span>
+            <span class="pro-dev">by Godrej Properties</span>
+        </div>
+        <div class="card-d card-d-custom">
+            <div>
+                <span class="heading2">Land Parcel </span>
+                <span class="heading1">18 Acres</span>
+            </div>
+            <div>
+                <span class="heading2">Floors </span>
+                <span class="heading1">G+50 Storeys</span>
+            </div>
+            <div>
+                <span class="heading2">Possession </span>
+                <span class="heading1">June 2029</span>
+            </div>
+        </div>
+        <span class="d-block mb-1 text-capitalize of-box offer-bg-animation">
+          <span class="offer-text-outer"> <span class="offer-text"> 
+         Avail Exclusive EOI Benefits<br/> Celebratory ₹34 Lacs* Off on 3 BHK <br/> Celebratory ₹49Lacs* Off on 4 BHK</span>
+        </span>
+        </span>
+        <span class="d-block" style="font-size: 14px; width: 100%; background: transparent; font-weight: bold; text-align: center; color: #fff;">
+    </span>
+        <span class="pro-tag-line"> Luxurious<b> 2, 3, 4 BHK & Shops  </b>  Starts </span> <span class="pro-price">₹ 2.50 Cr <small style="font-size:16px;"> Onwards</small> </span>
+        <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Left Panel" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+        Download Brochure
+    </button>
+    </div>
+    <section class="section shadow-sm lazyload" id="overview">
+        <h2 class="d-block section-heading color-primary text-capitalize">Welcome to Godrej Reserve</h2>
+        <p>Godrej Reserve is an expansive mixed-use project in Kandivali, offering spacious 2, 3 and 4 BHK apartments with balconies and commercial shop spaces. Experience resort-style living as the project features a grand clubhouse, a 2.5-acre retreat
+            with lush gardens, along with 25+ lifestyle amenities like a gym, squash court, swimming pool, amphitheater, jogging track, salon, cricket field, etc. Spring terraces, green open spaces, etc. The project has commercial shops on the ground
+            and first-floor levels. The commercial space offers 45 shops for retail usage. This attracts more investors looking for a functional and well-connected mixed-use development.
+        </p>
+        <p><span class="more-cont" style="display: none;"><span class="d-block">Kandivali is well-equipped with popular schools, hospitals, malls and recreational spots including Sharda Gyanpeeth School, ESIS Hospital, Growel’s Mall, and Oberoi Mall within the proximity of the project. Accessibility to Kandivali Railway Station, Goregaon Metro Station, Aarey Road, Unit No 13 Bus Stop, and the Western Express Highway makes commuting easy. The upcoming Akurli metro station will enhance connectivity. So, embrace opulent living at Godrej Reserve with excellent connectivity and modern facilities.
+        </span></span> <a href="#!" class="btn btn-link btn-sm more">Read more</a></p>
+
+        <button class="btn btn-info micro-form-btn effetMoveGradient enqModal" data-form="md" data-title="Download Brochure" data-btn="Download Now" data-enquiry="Download Brochure Welcome Text" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal"
+            data-target="#enqModal">
+        <span class="d-inline-block mi mi-download mr-1 animated slideInDown infinite"></span> Download Brochure
+        </button>
+    </section>
+    <section class="section shadow-sm lazyload" id="pricing">
+        <span class="section-link"></span>
+        <span class="head text-capitalize">Price</span>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-striped table-borderless border micro-price-table table-pricing">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border border-bottom-0 mb-w">Type</th>
+                            <th scope="col" class="border border-bottom-0 mb-w">Carpet Area</th>
+                            <th scope="col" class="border border-bottom-0 border-right-0">Price</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK Regal</td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
+                                1126/1134 Sq.ft.
+                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.55 Cr Onwards
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK Regal</td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
+                                1149/1159 Sq.ft.
+                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.90 Cr Onwards
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK</td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
+                                1450 Sq.ft.
+                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> 5.15 Cr Onwards
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BHK </td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
+                                2000 Sq.ft.
+                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> 7.25 Cr Onwards
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-type">Commercial Shops</td>
+                            <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">
+                                600 - 2500 Sq.ft.
+                                <small class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                            <td class="price-amt"><i class="mi mi-rs-light"></i> 3.90 Cr Onwards
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Price Breakup" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Price Breakup</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send Now" data-enquiry="Complete Costing Details" data-toggle="modal" data-target="#enqModal">
+                    <div class="at-property-item shadow-sm border border-grey mt-1">
+                        <div class="at-property-img lazyloaded" data-expand="-1"><img alt="costing sheet" data-sizes="auto" class="w-100 lazyautosizes ls-is-cached lazyloaded ls-inview" sizes="304px" src="{% static '' %}assets/img/costing.jpg">
+                            <div class="at-property-overlayer"></div> <span class="btn btn-default at-property-btn">Enquire Now</span> </div>
+                        <div class="at-property-dis effetGradient">Complete Costing Details</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section shadow-sm lazyload" id="sitefloorplan" data-script="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js " data-link="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+        <span class="section-link"></span>
+        <h2 class="head text-capitalize">Site &amp; Floor Plan of Godrej Reserve</h2> <span class="d-block section-heading-sub text-capitalize">Master Plan</span>
+        <div class="masterplan-box">
+            <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Master Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                <div class="at-property-item mt-1">
+                    <div class="at-property-img master-plan text-center">
+                        <img alt="Master Plan" data-sizes="auto" class="lazyload shadow-sm border border-grey" src="{% static '' %}assets/img/floorplan/masterplans.webp" />
+                        <div class="at-property-overlayer"></div>
+                        <span class="at-property-btn">View Master Plan </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <span class="d-block section-heading-sub text-capitalize">Floor Plan</span>
+        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send now" data-enquiry="Get Floor Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">On Request</button>
+
+        <!--<div class="row row-cols-1 row-cols-md-3">-->
+        <!--     <div class="col-md-4">-->
+        <!--            <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send Now" data-enquiry="Get Floor Plan" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">-->
+        <!--                <div class="at-property-item shadow-sm border border-grey mt-1">-->
+        <!--                    <div class="at-property-img">-->
+
+        <!--                        <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview" loading="lazy" src="./assets/img/floorplan/2bhk_750-0.webp" alt="2BHK 750-Sq.ft" />-->
+
+        <!--                        <div class="at-property-overlayer"></div>-->
+        <!--                        <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>-->
+        <!--                    </div>-->
+        <!--                    <div class="at-property-dis effetGradient"><h5>2BHK-750 Sq.ft</h5></div>-->
+        <!--                </div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+
+
+
+        <!--    </div>-->
+    </section>
+    <section class="section shadow-sm lazyload" id="amenities">
+        <span class="section-link"></span>
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="head text-capitalize">Amenities of Godrej Reserve</h2>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale float-lg-right mx-sm-auto  d-none d-lg-block" data-form="lg" data-title="Download Amenities" data-btn="Send Now" data-enquiry="Download Amenities" data-redirect="floorplan"
+                    data-toggle="modal" data-target="#enqModal">Download Amenities</button>
+            </div>
+        </div>
+        <div id="ami-3" class="ami-3 owl-carousel owl-theme">
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Multipurpose Hall" data-src="{% static '' %}assets/img/amenities/multi.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Multipurpose Hall</p>
+                </div>
+                <div class="ami_sec"><img alt="Reflexology Path" data-src="{% static '' %}assets/img/amenities/path.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Reflexology Path</p>
+                </div>
+            </div>
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Swimming Pool" data-src="{% static '' %}assets/img/amenities/pool.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Swimming Pool</p>
+                </div>
+                <div class="ami_sec"><img alt="Senior Citizen’s Area" data-src="{% static '' %}assets/img/amenities/senior.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Senior Citizen’s Area</p>
+                </div>
+            </div>
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Salon & Spa" data-src="{% static '' %}assets/img/amenities/spa.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Salon & Spa</p>
+                </div>
+                <div class="ami_sec"><img alt="Amphitheatre" data-src="{% static '' %}assets/img/amenities/therater.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Amphitheatre</p>
+                </div>
+            </div>
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Squash Court" data-src="{% static '' %}assets/img/amenities/court.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Squash Court</p>
+                </div>
+                <div class="ami_sec"><img alt="Cricket Turf" data-src="{% static '' %}assets/img/amenities/cricket.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Cricket Turf</p>
+                </div>
+            </div>
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Banquet Hall" data-src="{% static '' %}assets/img/amenities/hall.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Banquet Hall</p>
+                </div>
+                <div class="ami_sec"><img alt="Jogging Track" data-src="{% static '' %}assets/img/amenities/jogging.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Jogging Track</p>
+                </div>
+            </div>
+            <div class="item-wrp">
+                <div class="ami_sec"><img alt="Kids’ Play Area" data-src="{% static '' %}assets/img/amenities/kdsplayarea_1.webp" loading="lazy" class="lazyload" fetchpriority="low" />
+                    <p>Kids’ Play Area</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <p></p>
+            <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale float-lg-right mx-sm-auto d-lg-none" data-form="lg" data-title="Download Amenities" data-btn="Send Now" data-enquiry="Download Amenities" data-redirect="floorplan" data-toggle="modal"
+                data-target="#enqModal">Download Amenities</button></div>
+    </section>
+    <section class="section shadow-sm lazyload" id="gallery">
+        <span class="section-link"></span>
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="head text-capitalize">Gallery of Godrej Reserve</h2>
+            </div>
+            <div class="col-md-4"><button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale float-lg-right mx-sm-auto  d-none d-lg-block" data-form="lg" data-title="Download Gallery" data-btn="Send Now" data-enquiry="Download Gallery" data-redirect="floorplan"
+                    data-toggle="modal" data-target="#enqModal">Download Gallery</button></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/1.webp" aria-label="Gallery Image1"> <img alt="kid's Play Area" data-src="{% static '' %}assets/img/gallery/1.webp" class="lazyload gallery-thumb" /> </a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/2.webp" aria-label="Gallery Image2"> <img alt="Garden" data-src="{% static '' %}assets/img/gallery/2.webp" class="lazyload gallery-thumb" /> </a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/3.webp" aria-label="Gallery Image3"> <img alt="Swimming Pool" data-src="{% static '' %}assets/img/gallery/3.webp" class="lazyload gallery-thumb" /> </a></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2"><a data-fancybox="gallery-0" href="{% static '' %}assets/img/gallery/4.webp" aria-label="Gallery Image4"> <img alt="Bedroom" data-src="{% static '' %}assets/img/gallery/4.webp" class="lazyload gallery-thumb" /> </a></div>
+        </div>
+        <div class="col-12">
+            <p></p>
+            <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale float-lg-right mx-sm-auto d-lg-none" data-form="lg" data-title="Download Gallery" data-btn="Send Now" data-enquiry="Download Gallery" data-redirect="floorplan" data-toggle="modal"
+                data-target="#enqModal">Download Gallery</button>
+        </div>
+    </section>
+    <style>
+        iframe {
+            width: 100%;
+            height: 38vh;
+            border: 2px solid #d7d7d7;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            iframe {
+                width: 100%;
+                height: 32vh;
+                border: 2px solid #d7d7d7;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            iframe {
+                width: 100%;
+                height: 18vh;
+                border: 2px solid #d7d7d7;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            iframe {
+                width: 100%;
+                height: 26vh;
+                border: 2px solid #d7d7d7;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            iframe {
+                width: 100%;
+                height: 20vh;
+                border: 2px solid #d7d7d7;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            iframe {
+                width: 100%;
+                height: 50vh;
+                border: 2px solid #d7d7d7;
+            }
+        }
+    </style>
+    <section id="address_section" class="section shadow-sm"> </section>
+    <section class="section shadow-sm lazyloaded" id="sitevisit">
+        <span class="section-link"></span>
+        <span class="head text-capitalize">Virtual Tour Request</span>
+        <a href="#" class="enqModal" data-form="lg" data-title="Virtual Site Visit" data-btn="Start Tour" data-enquiry="Virtual Site Visit
+" data-redirect="virtualtour" data-toggle="modal" data-target="#enqModal">
+            <div class="at-property-item my-2 pt-md-0">
+                <div class="at-property-img vsv-img lazyloaded" data-expand="-1">
+                    <div class="d-block">
+                        <img alt="Godrej Reserve" class="img-responsive" src="{% static '' %}assets/img/vt67.webp" width="100%" fetchpriority="low" />
+                    </div>
+                    <div class="vsv-text-bk">
+                        <div class="vsv-text-bg">
+                            <div class="vsv-icon lazyloaded"></div>
+                            <span class="text-uppercase h1 font-weight-bold mb-0 d-none d-lg-block">Virtual Site Visit</span>
+                            <span class="text-capitalize text-center d-none d-lg-block"> Godrej Reserve </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="text-center d-block d-lg-none content-clr">Virtual Site visit</span>
+        </a>
+    </section>
+    <section class="section shadow-sm lazyload" id="developer">
+        <div class="d-block pt-2 pb-1 text-center"><img alt="Godrej Reserve Logo" src="{% static '' %}assets/img/logonew.svg" loading="lazy" style="max-width: 100%; height: 65px; display: inline-block;" /></div>
+        <div class="row">
+            <div class="col-md-8">
+                <span class="d-block section-heading-sub text-capitalize">About Godrej Properties</span>
+            </div>
+            <div class="col-md-4">
+                <div class="float-md-right d-none d-lg-block">
+                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale drift-open-chat-desktop" data-form="lg">
+Chat with us
+</button>
+                </div>
+            </div>
+        </div>
+
+        <p> Founded in 1897, Godrej Properties is a leading real estate developer in India with a range of residential townships, business parks, and mixed-use properties as part of its portfolio. The firm's properties stand out for their lovely architecture,
+            quality residences, tranquil lush environs, and use of cutting-edge technologies. With a grand legacy of 125 years in the real estate industry, Godrej Properties has changed the skyline of many cities in the country.</p>
+        <span class="d-block section-heading-sub1 text-capitalize">RERA Information</span>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="rera-box">
+                    <div class="rera-img">
+                        <img src="{% static '' %}assets/img/qrcode/qrcode_wing1.webp" loading="lazy" style="max-width: 100%; height: 100px; display: inline-block;" />
+                    </div>
+                    <div class="rera-details">
+                        <p>Godrej Reserve Wing 1 MahaRERA - <b>P51800054703</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="rera-box">
+                    <div class="rera-img">
+                        <img src="{% static '' %}assets/img/qrcode/qrcode_wing4.webp" loading="lazy" style="max-width: 100%; height: 100px; display: inline-block;" />
+                    </div>
+                    <div class="rera-details">
+                        <p>Godrej Reserve Wing 4 MahaRERA - <b>P51800054691</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="rera-box">
+                    <div class="rera-img">
+                        <img src="{% static '' %}assets/img/qrcode/qrcode_wing5.webp" loading="lazy" style="max-width: 100%; height: 100px; display: inline-block;" />
+                    </div>
+                    <div class="rera-details">
+                        <p>Godrej Reserve Wing 5 MahaRERA - <b>P51800054690</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="pro-rera text-center-mob">According to the RERA Act 2016 of the Government of India, all projects of the Godrej Properties including the Godrej Reserve, are listed on the Maharashtra Government's RERA website under registered projects.</span>
+        <p></p>
+        <div class="float-lg-right mx-sm-auto d-lg-none">
+            <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale drift-open-chat-mobile" data-form="lg">
+Chat with us.
+</button>
+        </div>
+    </section>
+    <section style="text-align:justify;background:#f7f7f7 !important;" class="section shadow-sm lazyload" id="developer">
+        <small>
+<style>
+.newlist { list-style: none; line-height: 25px; padding-left: 22px; text-align: left; }
+.newlist li:before { content: '✓'; font-weight: 800;  margin-right: 10px;  font-size: 13px;  margin-left: -22px; }
+</style>
+<ul class="newlist">
+    <li>Project Registered under Government of India RERA Act 2016</li>
+    <li>Government RERA Authorised Advertiser’s: Home Bazaar Services Pvt Ltd, Registration No A52000000045, CIN U45400MH2013PTC242930.</li>
+    <li>MAHA RERA Project Registration No.: P51800054703 | P51800054691 | P51800054690</li>
+    <li><b>Site Address:</b>Godrej Reserve: Akurli Rd, Kandivali, Ashok Nagar, Kandivali East, Mumbai, Maharashtra 400101.</li>
+    <li><b>Contact Us:</b> Corporate Office: Godrej Properties Limited: Unit No. 5C, 5th Floor, Godrej One, Pirojshanagar, Vikhroli East, Mumbai - 400 079.</li>
+     
+</ul>
+<b>Disclaimer:</b>
+We are an authorised marketing partner for this project. Provided content is given by respective owners and this website and content is for information purpose only and it does not constitute any offer to avail for any services. Prices mentioned are subject to change without prior notice and properties mentioned are subject to availability. You can expect a call, SMS or emails on details registered with us.<hr>
+<p style="text-align:center;">Copyright &copy; 2025 | <a aria-label="About Terms & Conditions" href="terms-conditions.php">Terms & Conditions</a> | <a aria-label="About Privacy Policy" href="privacy-policy.php">Privacy Policy</a> | <a aria-label="About Cookies Policy" href="cookies-policy.php">Cookies Policy</a> </p>
+</small>
+    </section>
+</main>
+
+{% endblock body %}
